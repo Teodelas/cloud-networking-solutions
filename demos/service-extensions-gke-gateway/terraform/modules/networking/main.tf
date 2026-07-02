@@ -100,7 +100,7 @@ resource "google_compute_router_nat" "nat_gateway" {
 
   log_config {
     enable = true
-    filter = "ERRORS_ONLY"
+    filter = "ALL"
   }
 }
 

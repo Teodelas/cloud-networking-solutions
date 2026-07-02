@@ -52,7 +52,7 @@ resource "google_cloud_run_v2_service" "ext_proc" {
   project  = var.project_id
   name     = var.service_name
   location = var.region
-  ingress  = "INGRESS_TRAFFIC_ALL" # Allow access from Service Extension infrastructure
+  ingress  = "INGRESS_TRAFFIC_INTERNAL_ONLY" # Allow access from Service Extension infrastructure
 
   deletion_protection = false
 
